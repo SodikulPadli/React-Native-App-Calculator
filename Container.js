@@ -16,9 +16,9 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from 'native-base';
 
 // Import Screen
-import Profile from './src/profile';
-import Calculator from './src/calculator';
-import MyList from './src/todos';
+import Profile from './src/screens/profile';
+import Calculator from './src/screens/calculator';
+import Todos from './src/screens/todos';
 
 // Create Stack Navigation
 const Stack = createStackNavigator();
@@ -80,8 +80,8 @@ export default function Container() {
           }}
         />
         <Stack.Screen
-          name="Mylist"
-          component={MyList}
+          name="Todos"
+          component={Todos}
           options={{
             title: 'Back To Menu',
           }}

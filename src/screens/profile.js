@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Box, Image, Pressable, Text, VStack, View } from 'native-base';
-import kontenbase from './config/config';
+import kontenbase from '../config/api';
 
 export default function Profile({ navigation }) {
   const [items, setItems] = useState([]);
@@ -34,7 +34,7 @@ export default function Profile({ navigation }) {
         </VStack>
       ))}
       <Pressable
-        onPress={() => navigation.navigate('Mylist')}
+        onPress={() => navigation.navigate('Todos')}
         style={{
           backgroundColor: '#f9f9f9',
           margin: 20,

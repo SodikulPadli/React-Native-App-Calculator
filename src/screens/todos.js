@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Text, Box, Input, Button, View, HStack, IconButton, Icon, Checkbox } from 'native-base';
-import kontenbase from './config/config';
 import { Entypo, Feather } from '@expo/vector-icons';
 
+import kontenbase from '../config/api';
 export default function MyList() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);

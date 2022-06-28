@@ -1,5 +1,5 @@
 import React from 'react';
-//Import React Native Gesture Handler
+require('fastestsmallesttextencoderdecoder');
 import 'react-native-gesture-handler';
 import { NativeBaseProvider, extendTheme } from 'native-base';
 import AppLoading from 'expo-app-loading';
